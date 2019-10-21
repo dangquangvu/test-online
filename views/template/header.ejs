@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <!-- Our Custom CSS -->
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="/stylesheets/default.css">
+    <link rel="stylesheet" href="/stylesheets/subject-manage.css">
+    <link rel="shortcut icon" href="/images/avata.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <div class="message-content">
+                    <div class="pic">
+                        <img src="/images/avata.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="message-title">
+                            <strong> John doe</strong>
+                        </div>
+                        <div class="message-detail">Administrator</div>
+                    </div>
+                </div>
+            </div>
+            <div class="line2"></div>
+            <ul class="list-unstyled components">
+
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Manage</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li><a href="#">User Manage</a></li>
+                        <li><a href="#">Subject Manage</a></li>
+                        <li><a href="#">Ca Thi Manage</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="target">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button class="btn btn-info d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fa fa-align-justify"></i>
+                                </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link " href="#">
+                                    <i class="fa fa-bell" style="font-size:18px; padding-top: 2px;"></i><span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="/images/avata.jpg" class="img-thumbnail rounded-circle" style="width: 30px; margin-top: -.3rem;" alt=""></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">LogOut <i class="fa fa-sign-out" aria-hidden="true"></i> <div class="fa fa-logout"></div></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+                            <i class="fa fa-align-left"></i>
+                </button>

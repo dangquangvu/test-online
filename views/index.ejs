@@ -1,0 +1,43 @@
+<%include ./template/header.ejs%>
+
+    <div class="content-message">
+        <div class="search" style="padding-bottom: 10px;">
+            <form action="#" method="post" style="text-align: center; display: flex;">
+                <input type="text" name="Khoá" id="" placeholder="Khoá"><input type="text" name="" id="" placeholder="Lớp"><input type="text" name="" id="" placeholder="Tên"><input type="text" name="" id="" placeholder="MSSV"><a href=""><i class="glyphicon glyphicon-search" style="padding: 5px;"></i></a>
+                <button type="button" class="btn btn-primary">import&nbsp;<i class="fa fa-plus"></i></button>
+            </form>
+        </div>
+        <table class="table table-bordered" style="border: 2px solid #dee2e6 ; text-align: center">
+            <thead style="border: 2px solid #dee2e6 ;" class=" text-success; ">
+                <tr id="thead">
+                    <th scope="col" class="">#</th>
+                    <th scope="col">Mã SV</th>
+                    <th scope="col">Họ và Tên</th>
+                    <th scope="col">Lớp Khoá Học</th>
+                    <th scope="col">Ngày Sinh</th>
+                    <th scope="col">Quê Quán</th>
+                    <th scope="col">Số ĐT</th>
+                    <th scope="col">Options</th>
+                </tr>
+            </thead>
+            <tbody style="border: 2px solid #dee2e6">
+                <tr class="cell">
+                    <th scope="row">1</th>
+                    <td class="text-tranform-left">17021134</td>
+                    <td class="text-tranform-left">Đặng Quang Vũ</td>
+                    <td>CQ-J-2017/K62</td>
+                    <td>05/05/1999</td>
+                    <td class="text-tranform-left">Mỹ lộc Nam Định</td>
+                    <td>0914538726</td>
+                    <td><a href="#"><i class="fa fa-edit text-info" id="edit" onclick="consolog()"></i></a> <a href="#"><i class="fa fa-trash text-primary" aria-hidden="true"></i></a></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="options text-tranform-right">
+            <button type="button" class="btn btn-primary">Add</button>
+            <button type="button" class="btn btn-primary">Print</button>
+        </div>
+    </div>
+    </div>
+
+    <%include ./template/footer.ejs%>
