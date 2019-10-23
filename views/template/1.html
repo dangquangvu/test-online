@@ -6,13 +6,21 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="stylesheet" href="/stylesheets/subject-manage.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
     <style>
+        .card-list {
+            z-index: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
         .card {
             margin: 10px auto;
             width: 300px;
@@ -60,70 +68,57 @@
             color: black;
         }
     </style>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-sm-6 col-md-4 col-xl-2 mx-auto ">
-                <div class="card 1">
-                    <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
-                    <div class="card_title title-white">
-                        <p>Card Title</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-xl-2 mx-auto">
-                <div class="card 1">
-                    <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
-                    <div class="card_title title-white">
-                        <p>Card Title</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-xl-2 mx-auto">
-                <div class="card 1">
-                    <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
-                    <div class="card_title title-white">
-                        <p>Card Title</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-xl-2 ">
-                <div class="card 1">
-                    <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
-                    <div class="card_title title-white">
-                        <p>Card Title</p>
-                    </div>
-                </div>
-            </div>
+    <div class="card-list">
 
-
+        <div class="container-fluid subject-content">
+            <div class="row" style="background: chartreuse;">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mx-auto ">
+                    <div class="card 1">
+                        <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
+                        <div class="card_title title-white">
+                            <p>Card Title</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mx-auto">
+                    <div class="card 1">
+                        <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
+                        <div class="card_title title-white">
+                            <p>Card Title</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mx-auto">
+                    <div class="card 1">
+                        <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
+                        <div class="card_title title-white">
+                            <p>Card Title</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 ">
+                    <div class="card 1">
+                        <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
+                        <div class="card_title title-white">
+                            <p>Card Title</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container navbar-right">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mx-auto ">
+                    <div class="card 1">
+                        <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
+                        <div class="card_title title-white">
+                            <p>nav-right</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- <div class="cards-list">
-        <div class="card 1">
-            <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
-            <div class="card_title title-white">
-                <p>Card Title</p>
-            </div>
-        </div>
-        <div class="card 1">
-            <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
-            <div class="card_title title-white">
-                <p>Card Title</p>
-            </div>
-        </div>
-        <div class="card 1">
-            <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
-            <div class="card_title title-white">
-                <p>Card Title</p>
-            </div>
-        </div>
-        <div class="card 1">
-            <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
-            <div class="card_title title-white">
-                <p>Card Title</p>
-            </div>
-        </div>
-    </div> -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
